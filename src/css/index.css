@@ -107,9 +107,6 @@
 }
 .main .main-mod{
     min-height: 150px;
-    /*position: absolute;*/
-    /*top:0;*/
-    /*left: 0;*/
     width:100%;
     padding:14px 10px 0;
     box-sizing: border-box;
@@ -148,19 +145,57 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .container .sidebar{
+    .header{
+        width:100%;
+        height: 40px;
+        line-height: 40px;
+        position: relative;
+        border-bottom: 1px solid #ececec;
+        background-color: #31AAE8;
+    }
+    .header h2{
+        font-size: 14px;
+        left: 40px;
+    }
+    .header .btn{
         position: absolute;
+        top:50%;
+        left:10px;
+        margin-top:-10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #17A05E;
+    }
+    .main-mod .main-mod-con a{
+        display: block;
+        padding: 4px 4px;
+        color: #000;
+        margin: 0 5px;
+    }
+    .container .sidebar{
+        position: fixed;
         left:0;
-        top:0;
-        width:20%;
+        top:41px;
+        width:40%;
         height: 100%;
         min-height: 400px;
-        padding:10px 20px;
-        /*box-sizing: border-box;*/
-        /*border:1px solid #eee;*/
+        padding:0;
+        z-index: 100;
+        display: none;
+        background: #fff;
+    }
+    .container .sidebar.toogle{
+        display: block;
+    }
+    .sidebar ul{
+        border-top:none;
     }
     .container .main{
-        width:60%;
+        width:100%;
         height: 100%;
+    }
+    .main{
+        margin-left: 0;
     }
 }

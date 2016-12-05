@@ -7,6 +7,7 @@ $(function(){
       items:$('.sidebar .item'),
       init:function(){
           this.clickBar();
+          this.disBlock();
       },
       //选项卡切换
       clickBar:function(){
@@ -15,6 +16,17 @@ $(function(){
               $(v).on('click',function(){
                 $(this).addClass('clicked').siblings().removeClass('clicked');
                 that.main.eq(k).addClass('first-main-abs').siblings().removeClass('first-main-abs');
+              })
+          })
+      },
+      disBlock:function(){
+          $('.btn').on('click',function () {
+              $('.sidebar').toggleClass('toogle');
+          });
+          $('.item').each(function (k,v) {
+              $(v).click(function (e) {
+                  e.stopPropagation();
+                  $('.sidebar').removeClass('toogle');
               })
           })
       }
