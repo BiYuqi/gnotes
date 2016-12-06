@@ -9,8 +9,45 @@
 .header h2{
     font-size: 20px;
     position: absolute;
-    left:2%;
+    left:6%;
     color: #fff;
+}
+.header .logo{
+    display: block;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top:50%;
+    margin-top: -24px;
+    left: 20px;
+    z-index: 200;
+    background: url("../img/logo.png") no-repeat;
+    background-size:48px;
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+
+}
+.header .logo:hover{
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+    animation: change 4s linear infinite;
+    -webkit-animation: change 4s linear infinite;
+}
+@-webkit-keyframes change{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes change{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 .container{
     width:100%;
@@ -184,6 +221,10 @@
         width: 20px;
         height: 20px;
         display: block;
+    }
+    .header .logo{
+        display: none;
+
     }
     .main .main-mod{
         min-height: 100px;
