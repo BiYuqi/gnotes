@@ -31,7 +31,7 @@
     height: 100%;
 }
 .sidebar ul{
-    border-top:1px dashed #6AB96E;
+    border-top:1px solid #6AB96E;
 }
 .sidebar .item{
     height: 40px;
@@ -143,7 +143,21 @@
 .first-main-abs{
     display: block;
 }
-
+/*分享本站 样式*/
+.basicShareBtn{
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #eee;
+    background-color: #10A0EA;
+    color: #fff;
+}
+#basicShareBg{
+    height: 100% !important;
+}
 @media screen and (max-width: 1000px) {
     .header{
         width:100%;
@@ -167,6 +181,9 @@
         border-radius: 50%;
         background-color: #17A05E;
     }
+    .main .main-mod{
+        min-height: 100px;
+    }
     .main-mod .main-mod-con a{
         display: block;
         padding: 4px 4px;
@@ -177,7 +194,7 @@
         position: fixed;
         left:0;
         top:41px;
-        width:40%;
+        width:45%;
         height: 100%;
         min-height: 400px;
         padding:0;
