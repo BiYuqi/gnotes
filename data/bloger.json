@@ -35,7 +35,8 @@
           [
             {"name":"JS前端开发群月报","link":"http://www.kancloud.cn/jsfront/month/82796"},
             {"name":"豪情前端作品列表","link":"http://jikeytang.github.io/"},
-            {"name":"前端解忧杂货铺","link":"https://zhuanlan.zhihu.com/thinkingInFE"}
+            {"name":"前端解忧杂货铺","link":"https://zhuanlan.zhihu.com/thinkingInFE"},
+            {"name":"ECMAScript 6入门","link":"http://es6.ruanyifeng.com/"}
           ]
       ],
   "makeBlog":
