@@ -164,22 +164,22 @@
         height: 40px;
         line-height: 40px;
         position: relative;
+        text-align: center;
         border-bottom: 1px solid #ececec;
         background-color: #31AAE8;
     }
     .header h2{
+        position:static;
         font-size: 14px;
-        left: 40px;
+        /*left: 40px;*/
     }
     .header .btn{
         position: absolute;
         top:50%;
-        left:10px;
+        left:18px;
         margin-top:-10px;
         width: 20px;
         height: 20px;
-        border-radius: 50%;
-        background-color: #17A05E;
     }
     .main .main-mod{
         min-height: 100px;
