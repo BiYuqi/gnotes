@@ -23,15 +23,16 @@
     z-index: 200;
     background: url("../img/logo.png") no-repeat;
     background-size:48px;
+    animation: change 5s linear infinite;
+    -webkit-animation: change 5s linear infinite;
     animation-play-state: paused;
     -webkit-animation-play-state: paused;
+
 
 }
 .header .logo:hover{
     animation-play-state: running;
     -webkit-animation-play-state: running;
-    animation: change 4s linear infinite;
-    -webkit-animation: change 4s linear infinite;
 }
 @-webkit-keyframes change{
     from{
@@ -214,6 +215,14 @@
 }
 .main-mod-about .art{
     padding-top:30px;
+}
+.art .suggest{
+    display: inline-block;
+    padding: 5px 8px;
+    border-radius: 4px;
+    margin-right: 5px;
+    color: #FFF;
+    background-color: #2975C2;
 }
 @media screen and (max-width: 1000px) {
     .header{
