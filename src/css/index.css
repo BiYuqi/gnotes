@@ -216,6 +216,7 @@
 .main-mod-about .art{
     padding-top:30px;
 }
+/*建议*/
 .art .suggest{
     display: inline-block;
     padding: 5px 8px;
@@ -223,7 +224,12 @@
     margin-right: 5px;
     color: #FFF;
     background-color: #2975C2;
+    transition: all .4s;
 }
+.art .suggest:hover{
+   background-color: #1BA161;
+}
+
 @media screen and (max-width: 1000px) {
     .header{
         width:100%;
