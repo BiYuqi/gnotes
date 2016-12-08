@@ -229,7 +229,35 @@
 .art .suggest:hover{
    background-color: #1BA161;
 }
-
+/*版本更新*/
+.art-version h4{
+    height: 22px;
+    line-height: 22px;
+    width:100%;
+    background-color: #eee;
+    position: relative;
+    padding-left: 10px;
+}
+.art-version h4:before{
+    width: 4px;
+    height: 22px;
+    content: '';
+    display: block;
+    background-color: #1BA161;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.art-version ul{
+    box-sizing: border-box;
+    padding: 10px;
+}
+.art-version ul li{
+    list-style: square;
+    margin-left: 20px;
+    font-size: 12px;
+    padding: 4px 0;
+}
 @media screen and (max-width: 1000px) {
     .header{
         width:100%;
@@ -308,5 +336,19 @@
     }
     .main-mod-about .art{
         padding-top:15px;
+    }
+    /*版本更新*/
+    .art-version h4{
+        height: 22px;
+        line-height: 22px;
+        width:100%;
+        background-color: #eee;
+        position: relative;
+        padding-left: 10px;
+        font-size: 12px;
+        color: #1BA161;
+    }
+    .art-version ul li{
+        color: #817E7E;
     }
 }
