@@ -33,14 +33,23 @@ $(function(){
                   'left':'0'
               },500);
           });
-          $('.item').each(function (k,v) {
-              $(v).click(function (e) {
-                  e.stopPropagation();
-                  that.siderBar.animate({
-                      'left':'-45%'
-                  },300);
+          if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            //移动端
+              $('.item').each(function (k,v) {
+                  $(v).click(function (e) {
+                      e.stopPropagation();
+                      that.siderBar.animate({
+                          'left':'-45%'
+                      },300);
+                  })
               })
-          })
+              console.log("11121221221")
+          }
+          else {
+            //PC端
+              console.log("0000000000000")
+          }
+
       },
       touchMovey:function(){
           var that = this;
