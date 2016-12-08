@@ -36,7 +36,9 @@ $(function(){
           $('.item').each(function (k,v) {
               $(v).click(function (e) {
                   e.stopPropagation();
-                  $('.sidebar').removeClass('toogle');
+                  that.siderBar.animate({
+                        'left':'-45%'
+                  },350);
               })
           })
       },
