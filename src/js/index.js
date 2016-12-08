@@ -37,8 +37,8 @@ $(function(){
               $(v).click(function (e) {
                   e.stopPropagation();
                   that.siderBar.animate({
-                        'left':'-45%'
-                  },350);
+                      'left':'-45%'
+                  },300);
               })
           })
       },
@@ -57,15 +57,15 @@ $(function(){
                   });
               }
               that.flag = true;
-              //console.log(parseInt(that.disPercent))
+              // console.log(parseInt(that.disPercent))
           });
           this.siderBar.on('touchend',function(){
-                if(that.flag && parseInt(that.disPercent) < -17){
+                if(that.flag && parseInt(that.disPercent) < -20){
                     that.siderBar.animate({
                         'left':'-45%'
                     },350);
                 }
-              if(that.flag && parseInt(that.disPercent) > -17 && parseInt(that.disPercent) < 0){
+              if(that.flag && parseInt(that.disPercent) > -20 && parseInt(that.disPercent) < 0){
                   that.siderBar.animate({
                       'left':'0'
                   },500);
