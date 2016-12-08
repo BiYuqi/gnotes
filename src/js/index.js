@@ -55,15 +55,15 @@ $(function(){
                   });
               }
               that.flag = true;
-              console.log(parseInt(that.disPercent))
+              //console.log(parseInt(that.disPercent))
           });
           this.siderBar.on('touchend',function(){
-                if(that.flag && parseInt(that.disPercent) < -20){
+                if(that.flag && parseInt(that.disPercent) < -17){
                     that.siderBar.animate({
                         'left':'-45%'
                     },350);
                 }
-              if(that.flag && parseInt(that.disPercent) > -20 && parseInt(that.disPercent) < 0){
+              if(that.flag && parseInt(that.disPercent) > -17 && parseInt(that.disPercent) < 0){
                   that.siderBar.animate({
                       'left':'0'
                   },500);
