@@ -115,6 +115,7 @@
     margin-left: 270px;
     position: relative;
     padding:10px 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     min-height: 407px;
 
@@ -147,6 +148,7 @@
     min-height: 120px;
     width:100%;
     padding:14px 10px 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 /*内层块*/
@@ -204,6 +206,7 @@
     min-height: 120px;
     width: 100%;
     padding: 14px 10px 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 .main-mod-about h2{
@@ -223,7 +226,7 @@
     border-radius: 4px;
     margin-right: 5px;
     color: #FFF;
-    background-color: #2975C2;
+    background-color: #31AAE8;
     transition: all .4s;
 }
 .art .suggest:hover{
@@ -325,6 +328,7 @@
         min-height: 120px;
         width: 100%;
         padding: 8px 10px 0;
+        -webkit-box-sizing: border-box;
         box-sizing: border-box;
     }
     .main-mod-about h2{
