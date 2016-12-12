@@ -11,7 +11,8 @@
           [
             {"name":"Angularjs进阶","link":"http://www.kancloud.cn/digest/angularjs-sunny1989/122834"},
             {"name":"Angularjs范例程序(荐)","link":"http://showcase.ngnice.com/#/home/home"},
-            {"name":"Angular的UI库(徐飞)","link":"https://github.com/xufei/ng-control"}
+            {"name":"Angular的UI库(徐飞)","link":"https://github.com/xufei/ng-control"},
+            {"name":"Angular中文社区","link":"http://angularjs.cn/hots"}
           ],
           [
             {"name":"Angular路由深入浅出","link":"http://div.io/topic/1096"},
