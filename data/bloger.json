@@ -33,10 +33,11 @@
   "vueBlog":
       [
           [
-
+            {"name":"基于vue2.0数据展示平台","link":"http://www.jianshu.com/p/da8836c4a4d7","github":"https://github.com/hieeyh/tong2-family"}
           ],
           [
             {"name":"vue2.0构建单页应用最佳实战 ","link":"http://www.tuicool.com/articles/me6RJfF"}
+
           ]
       ],
   "jsBlog":
