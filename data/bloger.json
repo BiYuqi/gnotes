@@ -3,7 +3,8 @@
       [
           [
             {"name":"咀嚼之味","link":"http://jerryzou.com/"},
-            {"name":"十年踪迹","link":"https://www.h5jun.com/archives/"}
+            {"name":"十年踪迹","link":"https://www.h5jun.com/archives/"},
+            {"name":"编程狂人","link":"http://www.tuicool.com/mags"}
           ]
 
       ],
@@ -27,7 +28,10 @@
   "nodeJsBlog":
       [
           [
-            {"name":"《一起学 Node.js》","link":"https://github.com/nswbmw/N-blog"}
+            {"name":"《一起学 Node.js》","link":"https://github.com/nswbmw/N-blog"},
+            {"name":"从零开始nodejs系列文章(荐)","link":"http://blog.fens.me/series-nodejs/"},
+            {"name":"MongoDB 极简实践入门","link":"https://github.com/StevenSLXie/Tutorials-for-Web-Developers/blob/master/MongoDB%20%E6%9E%81%E7%AE%80%E5%AE%9E%E8%B7%B5%E5%85%A5%E9%97%A8.md"},
+            {"name":"《koa实战》","link":"http://book.apebook.org/minghe/koa-action/index.html"}
           ]
       ],
   "vueBlog":
@@ -47,6 +51,7 @@
             {"name":"豪情前端作品列表","link":"http://jikeytang.github.io/"},
             {"name":"前端解忧杂货铺","link":"https://zhuanlan.zhihu.com/thinkingInFE"},
             {"name":"ECMAScript 6入门","link":"http://es6.ruanyifeng.com/"},
+            {"name":"ECMAScript 5","link":"http://yanhaijing.com/es5/#null"},
             {"name":"JavaScript Promise迷你书","link":"http://liubin.org/promises-book/"},
             {"name":"JavaScript 原理","link":"http://typeof.net/s/jsmech/"},
             {"name":"JavaScript 秘密花园","link":"http://bonsaiden.github.io/JavaScript-Garden/zh/"},
@@ -66,7 +71,17 @@
   "articleBlog":
       [
           [
-            {"name":"编程狂人","link":"http://www.tuicool.com/mags"}
+            {"name":"Markdown 新手指南","link":"http://www.jianshu.com/p/q81RER"},
+            {"name":"Markdown 语法说明","link":"http://wowubuntu.com/markdown/"},
+            {"name":"HTML 和 CSS 代码规范","link":"http://codeguide.bootcss.com/"},
+            {"name":"CSS3动画手册","link":"https://isux.tencent.com/css3/"},
+            {"name":"CSS参考手册","link":"http://css.doyoe.com/"},
+            {"name":"Flex 布局教程：语法篇","link":"http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html"},
+            {"name":"OverAPI","link":"http://overapi.com/"}
+          ],
+          [
+            {"name":"Jsfiddle","link":"http://jsfiddle.net/"},
+            {"name":"JSbin 语法说明","link":"http://jsbin.com/?html,output"}
           ]
       ],
   "quietBlog":
@@ -76,5 +91,3 @@
           ]
       ]
 }
-
-

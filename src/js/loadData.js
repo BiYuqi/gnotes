@@ -19,7 +19,7 @@ $(function(){
             for(var i=0;i<3;i++){
                 this.loadMake(i);
             }
-            for(var i=0;i<1;i++){
+            for(var i=0;i<2;i++){
                 this.loadArticle(i);
             }
         },
