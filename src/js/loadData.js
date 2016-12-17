@@ -169,7 +169,7 @@ $(function(){
                 success:function(data){
                     for(i in data.mobileBlog[index]){
                         str += '<li class="main-mod-con">'
-                            +     '<a href="'+data.mobileBlog[index][i].link+'" target="_blank">'+data.articleBlog[index][i].name+'</a>'
+                            +     '<a href="'+data.mobileBlog[index][i].link+'" target="_blank">'+data.mobileBlog[index][i].name+'</a>'
                             +   '</li>'
 
                     }
