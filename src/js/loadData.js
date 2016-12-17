@@ -22,6 +22,9 @@ $(function(){
             for(var i=0;i<2;i++){
                 this.loadArticle(i);
             }
+            for(var i=0;i<3;i++){
+                this.loadMobile(i);
+            }
         },
         //加载数据 个人博客 tech-blog
         loadData:function (index) {
@@ -152,6 +155,25 @@ $(function(){
 
                     }
                     $('.main .article-blog ul').eq(index).append(str);
+
+                }
+
+            })
+        },
+        loadMobile:function (index) {
+            var that = this;
+            var url = "data/bloger.json";
+            var str = '';
+            $.ajax({
+                url:url,
+                success:function(data){
+                    for(i in data.mobileBlog[index]){
+                        str += '<li class="main-mod-con">'
+                            +     '<a href="'+data.mobileBlog[index][i].link+'" target="_blank">'+data.articleBlog[index][i].name+'</a>'
+                            +   '</li>'
+
+                    }
+                    $('.main .mobile-blog ul').eq(index).append(str);
 
                 }
 
