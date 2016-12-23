@@ -65,7 +65,8 @@
 
           ],
           [
-            {"name":"webpack经典入门","link":"http://www.tuicool.com/articles/ZjemEbJ"}
+            {"name":"webpack经典入门","link":"http://www.tuicool.com/articles/ZjemEbJ"},
+            {"name":"webpack学习资源","link":"https://github.com/lengziyu/learn-webpack"}
           ]
       ],
   "articleBlog":
