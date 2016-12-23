@@ -14,6 +14,7 @@ $(function(){
       });
       localStorage.setItem("arrData",this.arrDisplay);
     },
+    // 点击时保存显示数据
     clickData:function(){
       var that = this;
       this.sideItems.each(function(k,v){
@@ -22,8 +23,9 @@ $(function(){
         })
       })
     },
+    // 页面重载时读取
     readData:function(){
-      var storeData = localStorage.getItem('arrData');
+      var storeData = localStorage.getItem('arrData')
       if(storeData){
         storeData = storeData.split(',');
         for(var i=0;i<storeData.length;i++){
