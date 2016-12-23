@@ -15,6 +15,7 @@ $(function(){
           this.clickBar();
           this.disBlock();
           this.touchMovey();
+          this.happyNewYear();
       },
       //选项卡切换
       clickBar:function(){
@@ -78,8 +79,15 @@ $(function(){
                   },500);
               }
           })
+      },
+      happyNewYear:function(){
+        var nowDate = new Date();
+      	if(nowDate.getMonth == 0 && nowDate.getDate == 1){
+      		$('.new-year').show();
+      	}else{
+          $('.new-year').hide();
+        }
       }
   };
   mainObj.init();
-
 });
