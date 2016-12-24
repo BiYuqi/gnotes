@@ -82,7 +82,7 @@ $(function(){
       },
       happyNewYear:function(){
         var nowDate = new Date();
-      	if(nowDate.getMonth == 0 && nowDate.getDate == 1){
+      	if(nowDate.getMonth() == 0 && nowDate.getDate() == 1){
       		$('.new-year').show();
       	}else{
           $('.new-year').hide();
