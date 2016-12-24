@@ -54,7 +54,6 @@
 .header .new-year{
   position: absolute;
   right: 10%;
-  display: none;
 }
 .header .new-year span{
   font-size: 30px;
