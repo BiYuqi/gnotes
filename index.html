@@ -521,7 +521,7 @@
 
           function addFlower(){
             setTimeout(function(){
-                if(arr.length < 500){
+                if(arr.length < 200){
                   for(var i=0;i<20;i++){
                     arr.push({
                       "left":random(0,1900),
@@ -532,7 +532,7 @@
                   }
                 }
                 addFlower();
-            },Math.random()*500+500)
+            },Math.random()*200+500)
           };
           addFlower();
         })()
