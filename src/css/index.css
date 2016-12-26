@@ -35,6 +35,16 @@
     animation-play-state: running;
     -webkit-animation-play-state: running;
 }
+/*2016/12/26*/
+.header canvas{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.header .canv{
+  height: 80px;
+  width: 100%;
+}
 @-webkit-keyframes change{
     from{
         transform: rotate(0deg);
@@ -372,6 +382,9 @@
     }
     .header .logo{
         display: none;
+    }
+    .header .canv{
+      display: none;
     }
     .main .main-mod{
         min-height: 100px;

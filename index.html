@@ -23,6 +23,9 @@
           <span>快</span>
           <span>乐</span>
         </div>
+        <div class="canv">
+          <canvas width="1900" height="80" id="myCanvas"></canvas>
+        </div>
     </header>
     <section class="container">
         <!--边栏-->
@@ -467,5 +470,73 @@
     <script src="src/js/index.js"></script>
     <script src="src/js/loadData.js"></script>
     <script src="src/js/localstorage.js"></script>
+    <script>
+        (function(){
+          function random(n,m){
+            return Math.floor(Math.random()*(m-n)+n);
+          };
+          function d2a(n){
+            return n*Math.PI/180;
+          }
+          //画布中生成雪花
+          var myCanvas = document.querySelector('#myCanvas');
+          var gd = myCanvas.getContext('2d');
+          var maxW = 1900;
+          var maxH = 80;
+          var arr = [];
+
+          for(var i=0;i<100;i++){
+            arr.push({
+              "left":random(0,1900),
+              "top":random(0,80),
+              "deg":random(-10,10),
+              "scale":random(2,6),
+            });
+          }
+          setInterval(function(){
+              gd.clearRect(0,0,myCanvas.width,myCanvas.height);
+              gd.save();
+
+              for(var i=0;i<arr.length;i++){
+                var h = 0.5 * arr[i].scale;
+                arr[i].left = arr[i].left + Math.tan(d2a(arr[i].deg))*h;
+                arr[i].top = arr[i].top + h;
+
+                if(arr[i].left <0 || arr[i].left>maxW || arr[i].top > maxH){
+                  arr.splice(i--,1)
+                  continue;
+                }
+                var width_i = arr[i].scale/2;
+                var ra = gd.createRadialGradient(arr[i].left,arr[i].top,width_i/4,arr[i].left,arr[i].top,width_i)
+                ra.addColorStop(0,"rgba(255,255,255,1)");
+                ra.addColorStop(1,"rgba(255,255,255,0.1)");
+                gd.fillStyle = ra;
+
+                gd.beginPath();
+                gd.arc(arr[i].left,arr[i].top,width_i,0,2*Math.PI);
+                gd.fill();
+              }
+              gd.restore();
+          },60);
+
+          function addFlower(){
+            setTimeout(function(){
+                if(arr.length < 500){
+                  for(var i=0;i<20;i++){
+                    arr.push({
+                      "left":random(0,1900),
+                      "top":0,
+                      "deg":random(-10,10),
+                      "scale":random(2,6),
+                    });
+                  }
+                }
+                addFlower();
+            },Math.random()*500+500)
+          };
+          addFlower();
+        })()
+
+    </script>
 </body>
 </html>
