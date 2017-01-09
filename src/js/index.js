@@ -88,7 +88,7 @@ $(function(){
           $('.new-year').hide();
         }
       },
-      //下面为插件
+      //下面为touch插件
       mobileTouch:function(){
           var that = this;
           etouch('#forTouch',function(e,touch) {
