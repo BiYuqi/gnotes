@@ -16,6 +16,7 @@ $(function(){
           this.disBlock();
           this.touchMovey();
           this.happyNewYear();
+          this.mobileTouch();
       },
       //选项卡切换
       clickBar:function(){
@@ -47,9 +48,7 @@ $(function(){
               });
           }else {
             //PC端
-
           }
-
       },
       touchMovey:function(){
           var that = this;
@@ -88,6 +87,27 @@ $(function(){
       	}else{
           $('.new-year').hide();
         }
+      },
+      //下面为插件
+      mobileTouch:function(){
+          var that = this;
+          etouch('#forTouch',function(e,touch) {
+              e.clock = true;  //给div加锁,完全阻止默认事件
+              // console.log('我仅仅只是一个tap啊！');
+              // console.log(touch);
+              }).on('swiper',function(e,touch) {
+
+              }).on('up',function(e,touch) {
+                  //console.log('上滑回调');
+              }).on('down',function(e,touch) {
+                  //console.log('下滑回调');
+              }).on('left',function(e,touch) {
+                  //console.log('左滑回调');
+              }).on('right',function(e,touch) {
+                  that.siderBar.animate({
+                      'left':'0'
+                  },300);
+          });
       }
   };
   mainObj.init();
