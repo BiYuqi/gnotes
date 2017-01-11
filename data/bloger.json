@@ -81,6 +81,7 @@
             {"name":"Flex 布局教程：语法篇","link":"http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html"},
             {"name":"jQuery API 中文文档","link":"http://www.jquery123.com/"},
             {"name":"OverAPI","link":"http://overapi.com/"},
+            {"name":"正则可视化工具","link":"https://regexper.com/"},
             {"name":"Jsfiddle","link":"http://jsfiddle.net/"}
           ],
           [
@@ -92,6 +93,9 @@
             {"name":"资源教程","link":"https://github.com/jsfront/src/blob/master/qq.md"}
           ],
           [
+            {"name":"Underscore","link":"http://www.bootcss.com/p/underscore/"},
+            {"name":"undersercore源码分析","link":"https://yoyoyohamapi.gitbooks.io/undersercore-analysis/content/base/index.html"},
+            {"name":"Underscore","link":"http://www.bootcss.com/p/underscore/"},
             {"name":"Underscore","link":"http://www.bootcss.com/p/underscore/"},
             {"name":"Chrome扩展及应用开发","link":"http://www.ituring.com.cn/article/60223"}
           ]
