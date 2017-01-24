@@ -271,6 +271,9 @@ html,body{
 .main-mod .main-mod-con:hover{
     box-shadow: 0 0 6px 1px #0e90d2;
     transform: translateY(-2px);
+    -ms-transform: translateY(-2px);/*IE9+*/
+    -moz-transform: translateY(-2px);/*火狐*/
+    -o-transform: translateY(-2px);/*欧鹏*/
 }
 /*toogle*/
 .main-abs{
